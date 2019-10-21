@@ -42,15 +42,3 @@ mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM
 caps: NET_BIND_SERVICE BLOCK_SUSPEND NET_ADMIN
-
-[persist/]
-mode: 0771
-user: AID_SYSTEM
-group: AID_SYSTEM
-caps: 0
-
-[dsp/]
-mode: 0771
-user: AID_MEDIA
-group: AID_MEDIA
-caps: 0
