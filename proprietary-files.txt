@@ -52,8 +52,10 @@ vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/wcnss_filter
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
 vendor/lib/libbtnv.so
+vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
 
 # DRM and SEE - from ali - OCN27.79-28-38
 vendor/bin/qseecomd
@@ -441,3 +443,34 @@ vendor/lib/libsensor_reg.so
 vendor/lib/libsensor1.so
 vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.ssc.so
+
+# GPS
+vendor/bin/hw/vendor.qti.gnss@1.0-service
+vendor/bin/loc_launcher
+vendor/bin/lowi-server
+vendor/bin/slim_daemon
+vendor/bin/xtra-daemon
+vendor/etc/cacert_location.pem
+vendor/etc/init/vendor.qti.gnss@1.0-service.rc
+vendor/lib/hw/vendor.qti.gnss@1.0-impl.so
+vendor/lib/libDRPlugin.so
+vendor/lib/libdataitems.so
+vendor/lib/libdrplugin_client.so
+vendor/lib/libevent_observer.so
+vendor/lib/libflp.so
+vendor/lib/libgdtap.so
+vendor/lib/libizat_client_api.so
+vendor/lib/libizat_core.so
+vendor/lib/liblbs_core.so
+-vendor/lib/libloc_api_v02.so
+vendor/lib/liblocationservice_glue.so
+vendor/lib/liblocationservice.so
+vendor/lib/liblowi_client.so
+vendor/lib/liblowi_wifihal.so
+vendor/lib/libslimclient.so
+vendor/lib/libulp2.so
+vendor/lib/libxtadapter.so
+vendor/lib/vendor.qti.gnss@1.0_vendor.so
+
+# Peripheral Client
+vendor/lib/libperipheral_client.so
