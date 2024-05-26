@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=kuntao
+DEVICE=starfire
 VENDOR=lenovo
 
 INITIAL_COPYRIGHT_YEAR=2017

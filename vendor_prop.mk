@@ -41,8 +41,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    qcom.bluetooth.soc=smd \
-    ro.qualcomm.bt.hci_transport=smd
+    qcom.bluetooth.soc=naples_uart \
+    ro.qualcomm.bt.hci_transport=naples_uart
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -50,10 +50,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.display.lmax=1280x720 \
     camera.lowpower.record.enable=1 \
     vidc.enc.dcvs.extra-buff-count=2
-
-# Charger
-PRODUCT_PROPERTY_OVERRIDES += \
-    log.tag.smart_charger=W
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -64,7 +60,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.gralloc.enable_fb_ubwc=1 \
     ro.opengles.version=196610 \
     ro.qualcomm.cabl=0 \
-    ro.sf.lcd_density=480
+    ro.sf.lcd_density=260
+#    ro.sf.hwrotation=180
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -74,19 +71,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/soc/7824900.sdhci/by-name/config
 
-# Fingerprint
-PRODUCT_PROPERTY_OVERRIDES += \
-    log.tag.synaFpHal=W \
-    log.tag.SynapticsLIB=W \
-    log.tag.synaTransport=W
-
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.gps.agps_provider=1
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
-media.stagefright.audio.sink=280 \
+    media.stagefright.audio.sink=280 \
     vendor.vidc.dec.downscalar_width=1920 \
     vendor.vidc.dec.downscalar_height=1088 \
     vendor.vidc.disable.split.mode=1 \
@@ -109,7 +100,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
     persist.data.netmgrd.qos.enable=true \
-    persist.data.mode=concurrent
+    persist.data.mode=concurrent \
+    ro.radio.noril=true
 
 # Security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
