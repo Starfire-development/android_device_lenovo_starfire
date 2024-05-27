@@ -80,7 +80,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service
 
 # Dalvik
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Display
 PRODUCT_PACKAGES += \
