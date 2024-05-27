@@ -152,7 +152,6 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Treble
-BOARD_VNDK_RUNTIME_DISABLE := true
 BOARD_VNDK_VERSION := current
 PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
 
