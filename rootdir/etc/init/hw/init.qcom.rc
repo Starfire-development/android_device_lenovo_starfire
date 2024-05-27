@@ -618,7 +618,7 @@ service ftmd /system/bin/logwrapper /system/vendor/bin/ftmdaemon
 
 service port-bridge /system/vendor/bin/port-bridge
     class main
-    user radio system
+    user radio
     group radio system inet
     disabled
     oneshot
