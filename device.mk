@@ -108,6 +108,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# FSTab
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
 # GPS
 PRODUCT_PACKAGES += \
     libgnss \
