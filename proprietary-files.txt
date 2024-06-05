@@ -41,6 +41,9 @@ vendor/lib/libfastcvopt.so
 vendor/lib/libmdsprpc.so
 
 # Audio - from ali - OCN27.79-28-38
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcvirt.so
+vendor/lib/soundfx/libqcreverb.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
