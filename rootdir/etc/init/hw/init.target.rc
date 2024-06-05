@@ -222,6 +222,12 @@ on boot
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
 
+    # MIC enabled state keycode
+    chown system system /sys/devices/soc/soc:gpio_keys/mic_keycode_on
+    chown system system /sys/devices/soc/soc:gpio_keys/mic_keycode_off
+    chown system system /sys/devices/soc/soc:gpio_keys/cam_keycode_on
+    chown system system /sys/devices/soc/soc:gpio_keys/cam_keycode_off
+
 service ppd /system/vendor/bin/mm-pp-dpps
     class late_start
     disabled
